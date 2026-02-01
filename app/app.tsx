@@ -1,6 +1,6 @@
-import WelcomeKit from '@/app/components/welcome/WelcomeKit'
 import './styles/app.css'
+import Page from './components/page'
 
 export default function App() {
-  return <WelcomeKit />
+  return <Page />
 }
