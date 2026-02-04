@@ -15,12 +15,12 @@ export default function InputBlock({ index, setGuessLetter }: InputBlockProps) {
     }
 
     return (
-        <div style={{ margin: "auto" }}>
-            <input type="text" style={{ backgroundColor: bgColor }} className="text-black w-[50px] h-[50px]" value={inputValue} onChange={handleChange} />
+        <div className="m-auto">
+            <input type="text" style={{ backgroundColor: bgColor, margin: "auto" }} className="text-black w-12.5 h-12.5 m-auto!" value={inputValue} onChange={handleChange} />
             <div>
-                <button className="grey w-4 h-4 bg-gray-600" onClick={() => setBgColor("grey")} />
-                <button className="yellow w-4 h-4 bg-yellow-400" onClick={() => setBgColor("yellow")} />
-                <button className="green w-4 h-4 bg-green-800" onClick={() => setBgColor("green")} />
+                <button className="grey w-4 h-4 bg-gray-600 cursor-pointer rounded-[8px]" onClick={() => setBgColor("grey")} />
+                <button className="yellow w-4 h-4 bg-yellow-400 cursor-pointer m-1.5 rounded-[8px]" onClick={() => setBgColor("yellow")} />
+                <button className="green w-4 h-4 bg-green-800 cursor-pointer rounded-[8px]" onClick={() => setBgColor("green")} />
             </div>
         </div>
     );
